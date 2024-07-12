@@ -8,10 +8,10 @@ jobs:
       steps:
         - uses: actions/checkout@v4
         - name: Check website status
-        run: |
-          curl --output /dev/null --silent --head --fail https://YuChen-cs.github.io/
-          if [ $? -ne 0 ]; then
-            echo "Website is down"
-          else
-            echo "Website is up"
-          fi
+          run: |
+            curl --output /dev/null --silent --head --fail https://YuChen-cs.github.io/
+            if [ $? -ne 0 ]; then
+              echo "Website is down"
+            else
+              echo "Website is up"
+            fi
